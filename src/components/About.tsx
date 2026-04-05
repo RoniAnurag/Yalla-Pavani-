@@ -167,7 +167,7 @@ export default function About() {
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-colors hover:bg-white/10">
                 <div className="flex flex-col mb-2">
                   <span className="text-sm font-mono text-orange-400 mb-1">Completed: 2020</span>
-                  <h4 className="text-lg font-semibold text-white/90">The Kings' School</h4>
+                  <h4 className="text-lg font-semibold text-white/90">The Kings&apos; School</h4>
                 </div>
                 <p className="text-sm text-white/60 leading-relaxed">
                   SSC (Class 10) - State Board

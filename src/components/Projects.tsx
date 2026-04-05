@@ -2,29 +2,12 @@ import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Ethereal Space',
-    category: 'WebGL Experience',
-    year: '2025',
+    title: 'Heart Disease & Diabetes Prediction',
+    category: 'Machine Learning, Python',
+    year: '2023',
     color: 'from-blue-500/20 to-purple-500/20',
-  },
-  {
-    title: 'Nexus Platform',
-    category: 'Product Design',
-    year: '2025',
-    color: 'from-emerald-500/20 to-teal-500/20',
-  },
-  {
-    title: 'Lumina Interface',
-    category: 'UX / UI Engineering',
-    year: '2024',
-    color: 'from-orange-500/20 to-red-500/20',
-  },
-  {
-    title: 'Aura Sync',
-    category: 'Motion Design',
-    year: '2024',
-    color: 'from-pink-500/20 to-rose-500/20',
-  },
+    description: 'Built a predictive model using patient health data to identify disease risk. Performed data preprocessing and basic model evaluation. Enhanced analytical thinking and data-driven problem-solving skills.',
+  }
 ];
 
 export default function Projects() {
@@ -59,9 +42,14 @@ export default function Projects() {
                   <p className="text-sm font-medium text-white/60 mb-2 tracking-wide uppercase">
                     {project.category}
                   </p>
-                  <h4 className="text-3xl font-semibold tracking-tight text-white/90 group-hover:text-white transition-colors">
+                  <h4 className="text-3xl font-semibold tracking-tight text-white/90 group-hover:text-white transition-colors mb-4">
                     {project.title}
                   </h4>
+                  {project.description && (
+                    <p className="text-white/60 text-sm leading-relaxed group-hover:text-white/80 transition-colors">
+                      {project.description}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
